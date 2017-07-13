@@ -33,7 +33,7 @@
 + (void)initSDK:(AvidlyAdsGlobalZone)zone;
 
 /**
- 获取广告配置
+ CP初始化广告配置
  
  @param gameAccountId 用户在游戏中的帐号id
  @param completeTask 是否完成了游戏中的新手任务，可选0或者1
@@ -42,8 +42,14 @@
  @param gender 性别   "M", "F"，未知可以传""
  @param age 年龄
  @param tags 标签
- @return 广告展示策略
  */
-+ (NSDictionary *)getAdConfigWithGameAccountId:(NSString *)gameAccountId completeTask:(BOOL)completeTask isPaid:(int)isPaid promotionChannelName:(NSString *)promotionChannelName gender:(NSString *)gender age:(int)age tags:(NSArray<NSString *> *)tags;
++ (void)initAdConfigWithGameAccountId:(NSString *)gameAccountId completeTask:(BOOL)completeTask isPaid:(int)isPaid promotionChannelName:(NSString *)promotionChannelName gender:(NSString *)gender age:(int)age tags:(NSArray<NSString *> *)tags;
 
+/**
+ CP根据广告位获取广告配置
+ 
+ @param placementID 广告位 (不能为nil和@"")
+ @return 广告配置
+ */
++ (NSDictionary *)getAdConfigWithPlacementID:(NSString *)placementID;
 @end

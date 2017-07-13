@@ -9,5 +9,7 @@
 #import "AvidlyAdsBannerBaseWrapper.h"
 
 @interface AvidlyAdsBannerRectangleWrapper : AvidlyAdsBannerBaseWrapper
+
 - (instancetype)initWithPlacement:(NSString *)avidPlacement controller:(UIViewController*)vc;
+
 @end

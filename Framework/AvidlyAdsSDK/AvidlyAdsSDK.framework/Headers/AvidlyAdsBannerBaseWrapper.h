@@ -12,12 +12,15 @@
 @protocol AvidlyAdsBannerWrapperProtocol;
 
 @interface AvidlyAdsBannerBaseWrapper : NSObject
+
 - (instancetype)initWithPlacement:(NSString *)avidPlacement controller:(UIViewController*)vc bannerType:(NSInteger) type;
+
+- (instancetype)initWithPlacement:(NSString *)avidPlacement controller:(UIViewController*)vc size:(CGSize)size bannerType:(NSInteger)type;
 
 /**
  * 获取banner view
  */
-- (UIView*)getView;
+- (UIView *)getView;
 
 /*
  * 设置回调代理
@@ -30,24 +33,12 @@
 
 @optional
 
-
+/**
+ *  广告点击
+ *
+ *  @param wrapper 广告控制对象
+ */
 - (void)bannerAdClick:(id)wrapper;
-
-
-/**
- *  广告加载成功
- *
- *  @param wrapper 广告控制对象
- */
-//- (void)bannerAdDidLoad:(id)wrapper size:(CGSize)size;
-
-/**
- *  广告加载失败
- *
- *  @param wrapper 广告控制对象
- *  @param error   广告加载失败error
- */
-//- (void)bannerAdDidFail:(id)wrapper error:(NSError *)error;
 
 /**
  *  广告展示完成
@@ -55,20 +46,5 @@
  *  @param wrapper 广告控制对象
  */
 - (void)bannerAdDidShow:(id)wrapper size:(CGSize)size;
-
-/**
- *  广告显示失败
- *
- *  @param wrapper 广告控制对象
- *  @param error   广告显示失败error
- */
-//- (void)bannerAdDidShowFail:(id)wrapper error:(NSError *)error;
-
-/**
- *  广告关闭
- *
- *  @param wrapper 广告控制对象
- */
-//- (void)bannerAdDidMisiss:(id)wrapper;
 
 @end
