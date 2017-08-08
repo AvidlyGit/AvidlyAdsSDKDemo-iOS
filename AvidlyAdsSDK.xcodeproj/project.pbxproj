@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		AA2992741F0A363A00C174ED /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA2992691F0A363A00C174ED /* FBAudienceNetwork.framework */; };
-		AA2992791F0A368100C174ED /* HolaStatisticalSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA2992781F0A368100C174ED /* HolaStatisticalSDK.framework */; };
 		AA2992931F0A40B800C174ED /* BannerTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA29928C1F0A40B800C174ED /* BannerTestViewController.m */; };
 		AA2992941F0A40B800C174ED /* InterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA29928E1F0A40B800C174ED /* InterstitialViewController.m */; };
 		AA2992951F0A40B800C174ED /* RewardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA2992901F0A40B800C174ED /* RewardViewController.m */; };
@@ -72,7 +71,6 @@
 
 /* Begin PBXFileReference section */
 		AA2992691F0A363A00C174ED /* FBAudienceNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBAudienceNetwork.framework; sourceTree = "<group>"; };
-		AA2992781F0A368100C174ED /* HolaStatisticalSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HolaStatisticalSDK.framework; sourceTree = "<group>"; };
 		AA29928B1F0A40B800C174ED /* BannerTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerTestViewController.h; sourceTree = "<group>"; };
 		AA29928C1F0A40B800C174ED /* BannerTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerTestViewController.m; sourceTree = "<group>"; };
 		AA29928D1F0A40B800C174ED /* InterstitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterstitialViewController.h; sourceTree = "<group>"; };
@@ -217,7 +215,6 @@
 				AA2993511F0A49EF00C174ED /* GoogleMobileAds.framework in Frameworks */,
 				AAAFBC871EA62B1D008A12B3 /* MediaPlayer.framework in Frameworks */,
 				AAAFBC851EA62B17008A12B3 /* QuartzCore.framework in Frameworks */,
-				AA2992791F0A368100C174ED /* HolaStatisticalSDK.framework in Frameworks */,
 				AA2993501F0A49EF00C174ED /* libGDTMobSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -231,14 +228,6 @@
 				AA2992691F0A363A00C174ED /* FBAudienceNetwork.framework */,
 			);
 			path = "FBAudienceNetwork-4.22.0";
-			sourceTree = "<group>";
-		};
-		AA2992771F0A368100C174ED /* HolaStatisticalSDK */ = {
-			isa = PBXGroup;
-			children = (
-				AA2992781F0A368100C174ED /* HolaStatisticalSDK.framework */,
-			);
-			path = HolaStatisticalSDK;
 			sourceTree = "<group>";
 		};
 		AA29928A1F0A40B800C174ED /* TestCode */ = {
@@ -511,7 +500,6 @@
 		AAAFBCD41EA62F1A008A12B3 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
-				AA2992771F0A368100C174ED /* HolaStatisticalSDK */,
 				AAE062421EEA7A9800322F07 /* AvidlyAdsSDK */,
 			);
 			path = Framework;
@@ -571,7 +559,7 @@
 		AAAFBBB51EA5E05B008A12B3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = liuguojun;
 				TargetAttributes = {
 					AAAFBBBC1EA5E05B008A12B3 = {
@@ -664,6 +652,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -716,6 +705,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -767,7 +757,6 @@
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Framework/HolaStatisticalSDK",
 					"$(PROJECT_DIR)/Framework/AvidlyAdsSDK",
 					"$(PROJECT_DIR)/3rdFramework/AdColony-iOS-SDK-3.1.0",
 					"$(PROJECT_DIR)/3rdFramework/Mobvista-SDK-1.9.0",
@@ -812,7 +801,6 @@
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Framework/HolaStatisticalSDK",
 					"$(PROJECT_DIR)/Framework/AvidlyAdsSDK",
 					"$(PROJECT_DIR)/3rdFramework/AdColony-iOS-SDK-3.1.0",
 					"$(PROJECT_DIR)/3rdFramework/Mobvista-SDK-1.9.0",

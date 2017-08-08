@@ -1,6 +1,0 @@
-framework module HolaStatisticalSDK {
-  umbrella header "HolaStatisticalSDK.h"
-
-  export *
-  module * { export * }
-}
