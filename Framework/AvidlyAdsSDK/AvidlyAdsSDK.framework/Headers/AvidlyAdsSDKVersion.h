@@ -1,4 +1,4 @@
 
 //sdk版本号
-#define AvidlyAdsSDKVERSION  @"2026"
+#define AvidlyAdsSDKVERSION  @"2027"
 

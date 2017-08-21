@@ -31,6 +31,8 @@
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
     
+    [AvidlyRewardDebug showDebugView:self];
+    
     return YES;
 }
 
