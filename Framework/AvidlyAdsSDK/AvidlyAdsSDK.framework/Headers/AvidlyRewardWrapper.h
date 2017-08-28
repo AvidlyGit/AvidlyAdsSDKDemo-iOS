@@ -10,6 +10,7 @@
 #import <Foundation/Foundation.h>
 
 @protocol AvidlyRewardDelegate;
+@protocol AvidlyRewardLoadDelegate;
 
 @interface AvidlyRewardWrapper : NSObject
 
@@ -35,6 +36,8 @@
  **/
 
 - (BOOL)show:(UIViewController *)viewController placeId:(NSString*)adId;
+
+- (void)load:(id<AvidlyRewardLoadDelegate>)delegate;
 
 @end
 
@@ -66,5 +69,19 @@
  * @param error: 条件不足的原因
  */
 - (void)AvidlyRewardVideoAdDontReward:(NSError *)error;
+
+@end
+
+@protocol AvidlyRewardLoadDelegate <NSObject>
+
+/*
+ * 激励视频广告加载完成
+ */
+- (void)AvidlyRewardVideoAdDidLoad;
+
+/*
+ * 激励视频广告加载失败
+ */
+- (void)AvidlyRewardVideoAdDidLoadFail;
 
 @end

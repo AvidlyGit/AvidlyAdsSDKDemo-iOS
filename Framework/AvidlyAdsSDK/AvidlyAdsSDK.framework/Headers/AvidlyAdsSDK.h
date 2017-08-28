@@ -16,6 +16,7 @@
 #import "AvidlyAdsSDKVersion.h"
 #import "AvidlyAdsWallWrapper.h"
 #import "AvidlyRewardDebug.h"
+#import "AvidlyInterstitialDebug.h"
 #import "AvidlyAdsGlobalZone.h"
 
 @interface AvidlyAdsSDK : NSObject

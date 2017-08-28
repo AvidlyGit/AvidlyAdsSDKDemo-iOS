@@ -10,10 +10,13 @@
 #import <Foundation/Foundation.h>
 
 @protocol AvidlyIntersitialDelegate;
+@protocol AvidlyIntersitialLoadDelegate;
 
 @interface AvidlyIntersitialWrapper : NSObject
 
 - (instancetype)initAvidPlacement:(NSString *)avidPlacement;
+
+- (NSString *)getAvidPlacement;
 
 - (void)setDelegate:(id<AvidlyIntersitialDelegate>)delegate;
 
@@ -21,8 +24,7 @@
 
 - (BOOL)show:(UIViewController *)viewController;
 
-////用于视频展示多次才失效，目前无逻辑
-//- (void)markShown;
+- (void)load:(id<AvidlyIntersitialLoadDelegate>)loadDelegate;
 
 @end
 
@@ -34,14 +36,6 @@
  @param interstitialAd 插屏广告
  */
 - (void)interstitialAdDidShow:(AvidlyIntersitialWrapper *)interstitialAd;
-
-/**
- 插屏广告显示失败
- 
- @param interstitialAd 插屏广告
- @param error          插屏广告显示失败error
- */
-//- (void)interstitialAd:(AvidlyIntersitialWrapper *)interstitialAd showFailWithError:(NSError *)error;
 
 /**
  插屏广告关闭
@@ -57,4 +51,21 @@
  */
 - (void)interstitialAdDidClick:(AvidlyIntersitialWrapper *)interstitialAd;
 
+@end
+
+@protocol AvidlyIntersitialLoadDelegate <NSObject>
+
+/**
+ 插屏广告加载成功
+
+ @param interstitialAd 插屏广告
+ */
+- (void)interstitialAdDidLoad:(AvidlyIntersitialWrapper *)interstitialAd;
+
+/**
+ 插屏广告加载失败
+
+ @param interstitialAd 插屏广告
+ */
+- (void)interstitialAdDidLoadFail:(AvidlyIntersitialWrapper *)interstitialAd;
 @end
