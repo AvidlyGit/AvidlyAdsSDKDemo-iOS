@@ -11,4 +11,5 @@
 typedef NS_ENUM(NSUInteger, AvidlyAdsGlobalZone) {
     AvidlyAdsGlobalZoneForeign = 0,     //国外
     AvidlyAdsGlobalZoneDomestic = 1,    //国内
+    AvidlyAdsGlobalZoneAuto = 2,        //自动根据ip判断
 };

@@ -8,7 +8,8 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
-#import <AvidlyAdsSDK/AvidlyAdsSDK.h>
+//#import <AvidlyAdsSDK/AvidlyAdsSDK.h>
+#import "AvidlyAdsSDK/AvidlyAdsSDK.h"
 
 @interface AppDelegate ()
 {
@@ -31,7 +32,7 @@
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
     
-    [AvidlyRewardDebug showDebugView:self];
+//    [AvidlyRewardDebug showDebugView:self];
     
     return YES;
 }
