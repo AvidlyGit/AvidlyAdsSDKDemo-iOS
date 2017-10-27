@@ -1,0 +1,6 @@
+framework module ZZAdSDK {
+  umbrella header "ZZAdSDK.h"
+
+  export *
+  module * { export * }
+}

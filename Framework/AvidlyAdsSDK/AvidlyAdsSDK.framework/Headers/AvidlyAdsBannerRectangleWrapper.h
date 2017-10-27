@@ -12,4 +12,6 @@
 
 - (instancetype)initWithPlacement:(NSString *)avidPlacement controller:(UIViewController*)vc;
 
+- (instancetype)initWithPlacement:(NSString *)avidPlacement controller:(UIViewController*)vc size:(CGSize)size;
+
 @end
