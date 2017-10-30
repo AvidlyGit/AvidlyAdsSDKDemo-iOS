@@ -8,8 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
-//#import <AvidlyAdsSDK/AvidlyAdsSDK.h>
-#import "AvidlyAdsSDK/AvidlyAdsSDK.h"
+#import <AvidlyAdsSDK/AvidlyAdsSDK.h>
 
 @interface AppDelegate ()
 {

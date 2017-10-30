@@ -11,6 +11,7 @@
 #import "InterstitialViewController.h"
 #import "BannerTestViewController.h"
 #import "WallViewController.h"
+#import <AvidlyAdsSDK/AvidlyAdsSDK.h>
 
 @interface ViewController ()
 
@@ -54,6 +55,14 @@
     [self.view addSubview:button4];
     [self adjustCenterH:button4];
     
+    UIButton *button5 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    button5.backgroundColor = [UIColor orangeColor];
+    button5.frame = CGRectMake(70, 380, 250, 40);
+    [button5 setTitle:@"其他测试" forState:UIControlStateNormal];
+    [button5 addTarget:self action:@selector(testClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button5];
+    [self adjustCenterH:button5];
+    
 }
 
 - (void)adjustCenterH:(UIView*)v{
@@ -86,6 +95,12 @@
 {
     WallViewController *vc = [[WallViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (void)testClick
+{
+    NSDictionary *adConfig = [AvidlyAdsSDK getAdConfigWithPlacementID:@"addStep111"];
+    NSLog(@"%@",adConfig);
 }
 
 #pragma mark Orientations

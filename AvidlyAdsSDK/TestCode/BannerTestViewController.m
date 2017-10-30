@@ -29,146 +29,95 @@
 {
     AvidlyAdsBannerRectangleWrapper *_bottomRectBanner;
     AvidlyAdsBannerStripWrapper *_topStripBanner;
+    AvidlyAdsBannerStripWrapper *_bottomStripBanner;
+    
     UIView *_bannerRectView;
-    UIView *_bannerStripView;
+    UIView *_topStripView;
+    UIView *_bottomStripView;
 }
 
 @end
 
 @implementation BannerTestViewController
 
-- (void)delayLoadView
-{
-    _bottomRectBanner = [[AvidlyAdsBannerRectangleWrapper alloc] initWithPlacement:@"banner_bbb" controller:self];
-    _bottomRectBanner.delegate = self;
-    
-    _topStripBanner = [[AvidlyAdsBannerStripWrapper alloc] initWithPlacement:@"banner_aaa" controller:self];
-    _topStripBanner.delegate = self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
-    [NSThread detachNewThreadSelector:@selector(delayLoadView) toTarget:self withObject:nil];
+    [self loadTopStripBanner];
+    [self loadBottomStripBanner];
+    [self loadRectangleBanner];
+}
+
+- (void)loadRectangleBanner
+{
+    CGSize size = CGSizeMake(self.view.frame.size.width, self.view.frame.size.width);
+    _bottomRectBanner = [[AvidlyAdsBannerRectangleWrapper alloc] initWithPlacement:@"banner_bbb" controller:self size:size];
+    _bottomRectBanner.delegate = self;
+    
+    _bannerRectView = [[UIView alloc] initWithFrame:CGRectMake(0, 200, self.view.frame.size.width, self.view.frame.size.width)];
+    [self.view addSubview:_bannerRectView];
+    
+    UIView *view = [_bottomRectBanner getView];
+    [_bannerRectView addSubview:view];
+//    _bannerRectView.backgroundColor = [UIColor orangeColor];
+}
+
+- (void)loadTopStripBanner
+{
+    _topStripBanner = [[AvidlyAdsBannerStripWrapper alloc] initWithPlacement:@"banner_aaa" controller:self];
+    _topStripBanner.delegate = self;
+    
+    _topStripView = [[UIView alloc] initWithFrame:CGRectMake(0, 100, self.view.frame.size.width, 80)];
+    [self.view addSubview:_topStripView];
+    
+    UIView *view = [_topStripBanner getView];
+    [_topStripView addSubview:view];
+}
+
+- (void)loadBottomStripBanner
+{
+    CGFloat height = 50;
+    CGSize size = CGSizeMake(self.view.frame.size.width, height);
+    _bottomStripBanner = [[AvidlyAdsBannerStripWrapper alloc] initWithPlacement:@"banner_aaa" controller:self size:size];
+    _bottomStripBanner.delegate = self;
+    
+    _bottomStripView = [[UIView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height - height, self.view.frame.size.width, height)];
+    [self.view addSubview:_bottomStripView];
+    
+    UIView *view = [_bottomStripBanner getView];
+    [_bottomStripView addSubview:view];
 }
 
 - (void)btnClick:(UIButton*)btn{
-    if(btn.tag == 200){
-        exit(0);
+    if(self.navigationController){
+        [self.navigationController popViewControllerAnimated:YES];
     }
     else{
-        
-        if(self.navigationController){
-            [self.navigationController popViewControllerAnimated:YES];
-        }
-        else{
-            //[self popViewControllerAnimated:YES];
-        }
-        //[self dismissViewControllerAnimated:YES completion:nil];
+        //[self popViewControllerAnimated:YES];
     }
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-- (void)adjustBannerLayout:(id)wrapper size:(CGSize)size{
-    if(_topStripBanner == wrapper){
-        CGRect frame = _bannerStripView.frame;
-        frame.size = size;
-        frame.origin.x = (self.view.frame.size.width - frame.size.width)/2;
-        frame.origin.y = 100;
-        _bannerStripView.frame = frame;
-        _bannerStripView.hidden = NO;
-        
-    }
-    else if (_bottomRectBanner == wrapper){
-        CGRect frame = _bannerRectView.frame;
-        frame.size = size;
-        frame.origin.x = (self.view.frame.size.width - frame.size.width)/2;
-        frame.origin.y = self.view.frame.size.height - frame.size.height;
-        _bannerRectView.frame = frame;
-        _bannerRectView.hidden = NO;
-    }
-}
-
-- (void)bannerAdClick:(id)wrapper{
-    
-}
-
-
-/**
- *  广告加载成功
- *
- *  @param wrapper 插屏广告对象
- */
-- (void)bannerAdDidLoad:(id)wrapper size:(CGSize)size{
-    NSLog(@"bannerAdDidLoad ....");
-}
-
-/**
- *  广告加载失败
- *
- *  @param wrapper 插屏广告对象
- *  @param error          插屏广告加载失败error
- */
-- (void)bannerAdDidFail:(id)wrapper error:(NSError *)error{
-    
-}
+#pragma mark AvidlyAdsBannerWrapperProtocol
 
 /**
  *  广告展示完成
  *
  *  @param wrapper 广告对象
  */
-- (void)bannerAdDidShow:(id)wrapper size:(CGSize)size{
-    
-    if(_topStripBanner == wrapper){
-        if (!_bannerStripView) {
-            _bannerStripView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0, 0)];
-            [self.view addSubview:_bannerStripView];
-            UIView *view = [_topStripBanner getView];
-            [_bannerStripView addSubview:view];
-            if(view.frame.size.width > 0){
-                [self adjustBannerLayout:_topStripBanner size:view.frame.size];
-            }
-        }
-    }
-    
-    else if (_bottomRectBanner == wrapper){
-        if (!_bannerRectView) {
-            _bannerRectView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0, 0)];
-            [self.view addSubview:_bannerRectView];
-            UIView *view = [_bottomRectBanner getView];
-            [_bannerRectView addSubview:view];
-            if(view.frame.size.width > 0){
-                [self adjustBannerLayout:_bottomRectBanner size:view.frame.size];
-            }
-        }
-    }
-    
-    [self adjustBannerLayout:wrapper size:size];
-}
-
-/**
- *  广告显示失败
- *
- *  @param bannerAd 广告对象
- *  @param error    广告显示失败error
- */
-- (void)bannerAdDidShowFail:(id)bannerAd error:(NSError *)error{
+- (void)bannerAdDidShow:(id)wrapper size:(CGSize)size
+{
     
 }
 
 /**
- *  广告关闭
+ *  广告点击
  *
- *  @param bannerAd 广告对象
+ *  @param wrapper 广告对象
  */
-- (void)bannerAdDidMisiss:(id)bannerAd{
+- (void)bannerAdClick:(id)wrapper
+{
     
 }
 

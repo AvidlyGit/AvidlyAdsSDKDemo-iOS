@@ -833,9 +833,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = HCJK3Y243A;
-				ENABLE_BITCODE = YES;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/3rdFramework/AdColony-iOS-SDK-3.1.0",
@@ -849,7 +849,6 @@
 					"$(PROJECT_DIR)/3rdFramework/IronSource-SDK-6.6.5",
 					"$(PROJECT_DIR)/3rdFramework/Mobvista-SDK-1.9.0",
 					"$(PROJECT_DIR)/3rdFramework/Mytarget-SDK-4.6.20",
-					"$(PROJECT_DIR)/3rdFramework/PlayableAds-SDK-1.0.4",
 					"$(PROJECT_DIR)/3rdFramework/Unity-SDK-2.1.0",
 					"$(PROJECT_DIR)/3rdFramework/Vungle-SDK-5.1.1",
 					"$(PROJECT_DIR)/Framework/AvidlyAdsSDK",
@@ -878,7 +877,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.avidly.adsdk.demo.qa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "63e8824d-56d3-4144-8c70-140f2dc5ad64";
+				PROVISIONING_PROFILE = "23bc79c0-d673-487b-923a-263df6a2a1a9";
 				PROVISIONING_PROFILE_SPECIFIER = AdsQATest_AdHoc_Distribution_Profile;
 			};
 			name = Debug;
@@ -888,9 +887,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = HCJK3Y243A;
-				ENABLE_BITCODE = YES;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/3rdFramework/AdColony-iOS-SDK-3.1.0",
@@ -904,7 +903,6 @@
 					"$(PROJECT_DIR)/3rdFramework/IronSource-SDK-6.6.5",
 					"$(PROJECT_DIR)/3rdFramework/Mobvista-SDK-1.9.0",
 					"$(PROJECT_DIR)/3rdFramework/Mytarget-SDK-4.6.20",
-					"$(PROJECT_DIR)/3rdFramework/PlayableAds-SDK-1.0.4",
 					"$(PROJECT_DIR)/3rdFramework/Unity-SDK-2.1.0",
 					"$(PROJECT_DIR)/3rdFramework/Vungle-SDK-5.1.1",
 					"$(PROJECT_DIR)/Framework/AvidlyAdsSDK",
@@ -928,7 +926,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.avidly.adsdk.demo.qa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "63e8824d-56d3-4144-8c70-140f2dc5ad64";
+				PROVISIONING_PROFILE = "23bc79c0-d673-487b-923a-263df6a2a1a9";
 				PROVISIONING_PROFILE_SPECIFIER = AdsQATest_AdHoc_Distribution_Profile;
 			};
 			name = Release;
