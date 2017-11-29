@@ -43,6 +43,11 @@
 		AA2992FE1F0A498D00C174ED /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA29929F1F0A456A00C174ED /* CoreMotion.framework */; };
 		AA2992FF1F0A49A500C174ED /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA29929D1F0A44BD00C174ED /* GLKit.framework */; };
 		AA2993001F0A49C800C174ED /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AA2992A31F0A459A00C174ED /* libc++.tbd */; };
+		AA52CAC91FB45A5300C58360 /* Maio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA52CAC11FB45A5300C58360 /* Maio.framework */; };
+		AA52CACA1FB45A5300C58360 /* NendAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA52CAC31FB45A5300C58360 /* NendAd.framework */; };
+		AA52CACB1FB45A5300C58360 /* NendAdResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AA52CAC51FB45A5300C58360 /* NendAdResource.bundle */; };
+		AA52CACC1FB45A5300C58360 /* PlayableAdsSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AA52CAC71FB45A5300C58360 /* PlayableAdsSDK.bundle */; };
+		AA52CACD1FB45A5300C58360 /* PlayableAdsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA52CAC81FB45A5300C58360 /* PlayableAdsSDK.framework */; };
 		AAAFBBC21EA5E05B008A12B3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AAAFBBC11EA5E05B008A12B3 /* main.m */; };
 		AAAFBBC51EA5E05B008A12B3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AAAFBBC41EA5E05B008A12B3 /* AppDelegate.m */; };
 		AAAFBBCD1EA5E05B008A12B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAAFBBCC1EA5E05B008A12B3 /* Assets.xcassets */; };
@@ -71,8 +76,6 @@
 		AAAFBCD21EA62D21008A12B3 /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AAAFBCD11EA62D21008A12B3 /* libz.1.2.5.tbd */; };
 		AAD7292B1FA2D91C004521EA /* zzAdImage.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AAD729261FA2D91C004521EA /* zzAdImage.bundle */; };
 		AAD7292C1FA2D91C004521EA /* ZZAdSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAD729271FA2D91C004521EA /* ZZAdSDK.framework */; };
-		AAD7292D1FA2D91C004521EA /* PlayableAdsSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AAD729291FA2D91C004521EA /* PlayableAdsSDK.bundle */; };
-		AAD7292E1FA2D91C004521EA /* PlayableAdsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAD7292A1FA2D91C004521EA /* PlayableAdsSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -147,6 +150,11 @@
 		AA29929F1F0A456A00C174ED /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		AA2992A11F0A458200C174ED /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		AA2992A31F0A459A00C174ED /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		AA52CAC11FB45A5300C58360 /* Maio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Maio.framework; sourceTree = "<group>"; };
+		AA52CAC31FB45A5300C58360 /* NendAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NendAd.framework; sourceTree = "<group>"; };
+		AA52CAC51FB45A5300C58360 /* NendAdResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = NendAdResource.bundle; sourceTree = "<group>"; };
+		AA52CAC71FB45A5300C58360 /* PlayableAdsSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PlayableAdsSDK.bundle; sourceTree = "<group>"; };
+		AA52CAC81FB45A5300C58360 /* PlayableAdsSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PlayableAdsSDK.framework; sourceTree = "<group>"; };
 		AAAFBBBD1EA5E05B008A12B3 /* AvidlyAdsSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AvidlyAdsSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAAFBBC11EA5E05B008A12B3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AAAFBBC31EA5E05B008A12B3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -178,8 +186,6 @@
 		AAAFBCD11EA62D21008A12B3 /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
 		AAD729261FA2D91C004521EA /* zzAdImage.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = zzAdImage.bundle; sourceTree = "<group>"; };
 		AAD729271FA2D91C004521EA /* ZZAdSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZZAdSDK.framework; sourceTree = "<group>"; };
-		AAD729291FA2D91C004521EA /* PlayableAdsSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PlayableAdsSDK.bundle; sourceTree = "<group>"; };
-		AAD7292A1FA2D91C004521EA /* PlayableAdsSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PlayableAdsSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,17 +201,18 @@
 				AA2992FD1F0A493E00C174ED /* libxml2.tbd in Frameworks */,
 				AA0223031F7203D20068994F /* libChanceAd_Video.a in Frameworks */,
 				AAAFBCD21EA62D21008A12B3 /* libz.1.2.5.tbd in Frameworks */,
-				AAD7292E1FA2D91C004521EA /* PlayableAdsSDK.framework in Frameworks */,
 				AAD7292C1FA2D91C004521EA /* ZZAdSDK.framework in Frameworks */,
 				AAAFBCD01EA62D1A008A12B3 /* Foundation.framework in Frameworks */,
 				AA02230C1F7203D20068994F /* IronSource.framework in Frameworks */,
 				AA0222FD1F7203D20068994F /* libAppnextSDKCore.a in Frameworks */,
 				AAAFBCCE1EA62D12008A12B3 /* UIKit.framework in Frameworks */,
+				AA52CACD1FB45A5300C58360 /* PlayableAdsSDK.framework in Frameworks */,
 				AA0222FB1F7203D20068994F /* AppLovinSDK.framework in Frameworks */,
 				AAAFBCA91EA62B8D008A12B3 /* AdSupport.framework in Frameworks */,
 				AAAFBCA71EA62B86008A12B3 /* AudioToolbox.framework in Frameworks */,
 				AA0223001F7203D20068994F /* Centrixlink.framework in Frameworks */,
 				AAAFBCA51EA62B80008A12B3 /* AVFoundation.framework in Frameworks */,
+				AA52CACA1FB45A5300C58360 /* NendAd.framework in Frameworks */,
 				AA02230A1F7203D20068994F /* GoogleMobileAds.framework in Frameworks */,
 				AAAFBCA31EA62B74008A12B3 /* CoreTelephony.framework in Frameworks */,
 				AAAFBCA11EA62B6E008A12B3 /* EventKit.framework in Frameworks */,
@@ -222,6 +229,7 @@
 				AA02230E1F7203D20068994F /* MVSDKReward.framework in Frameworks */,
 				AAAFBC911EA62B37008A12B3 /* CFNetwork.framework in Frameworks */,
 				AAAFBC8F1EA62B32008A12B3 /* CoreGraphics.framework in Frameworks */,
+				AA52CAC91FB45A5300C58360 /* Maio.framework in Frameworks */,
 				AA0223081F7203D20068994F /* FBAudienceNetwork.framework in Frameworks */,
 				AAAFBC8D1EA62B2D008A12B3 /* CoreMedia.framework in Frameworks */,
 				AA02230B1F7203D20068994F /* InMobiSDK.framework in Frameworks */,
@@ -488,6 +496,40 @@
 			path = TestCode;
 			sourceTree = "<group>";
 		};
+		AA52CAC01FB45A5300C58360 /* Maio-SDK-1.2.17 */ = {
+			isa = PBXGroup;
+			children = (
+				AA52CAC11FB45A5300C58360 /* Maio.framework */,
+			);
+			path = "Maio-SDK-1.2.17";
+			sourceTree = "<group>";
+		};
+		AA52CAC21FB45A5300C58360 /* NendAd-SDK-4.0.1 */ = {
+			isa = PBXGroup;
+			children = (
+				AA52CAC31FB45A5300C58360 /* NendAd.framework */,
+				AA52CAC41FB45A5300C58360 /* Resources */,
+			);
+			path = "NendAd-SDK-4.0.1";
+			sourceTree = "<group>";
+		};
+		AA52CAC41FB45A5300C58360 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AA52CAC51FB45A5300C58360 /* NendAdResource.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AA52CAC61FB45A5300C58360 /* PlayableAds-SDK-1.0.7 */ = {
+			isa = PBXGroup;
+			children = (
+				AA52CAC71FB45A5300C58360 /* PlayableAdsSDK.bundle */,
+				AA52CAC81FB45A5300C58360 /* PlayableAdsSDK.framework */,
+			);
+			path = "PlayableAds-SDK-1.0.7";
+			sourceTree = "<group>";
+		};
 		AAAFBBB41EA5E05B008A12B3 = {
 			isa = PBXGroup;
 			children = (
@@ -579,20 +621,13 @@
 			path = "BatMobi-SDK-2.2.0";
 			sourceTree = "<group>";
 		};
-		AAD729281FA2D91C004521EA /* PlayableAds-SDK-1.0.6 */ = {
-			isa = PBXGroup;
-			children = (
-				AAD729291FA2D91C004521EA /* PlayableAdsSDK.bundle */,
-				AAD7292A1FA2D91C004521EA /* PlayableAdsSDK.framework */,
-			);
-			path = "PlayableAds-SDK-1.0.6";
-			sourceTree = "<group>";
-		};
 		AAE0624E1EEA87DC00322F07 /* 3rdFramework */ = {
 			isa = PBXGroup;
 			children = (
+				AA52CAC01FB45A5300C58360 /* Maio-SDK-1.2.17 */,
+				AA52CAC21FB45A5300C58360 /* NendAd-SDK-4.0.1 */,
+				AA52CAC61FB45A5300C58360 /* PlayableAds-SDK-1.0.7 */,
 				AAD729251FA2D91C004521EA /* BatMobi-SDK-2.2.0 */,
-				AAD729281FA2D91C004521EA /* PlayableAds-SDK-1.0.6 */,
 				AA0222A81F7203D20068994F /* AdColony-iOS-SDK-3.1.0 */,
 				AA0222AA1F7203D20068994F /* AppLovin-SDK-4.2.1 */,
 				AA0222AC1F7203D20068994F /* Appnext-SDK-1.8.2 */,
@@ -678,11 +713,12 @@
 				AA0223181F7204210068994F /* AvidlyAdsSDK.bundle in Resources */,
 				AAAFBBD01EA5E05B008A12B3 /* LaunchScreen.storyboard in Resources */,
 				AA0222FE1F7203D20068994F /* baidumobadsdk.bundle in Resources */,
+				AA52CACC1FB45A5300C58360 /* PlayableAdsSDK.bundle in Resources */,
+				AA52CACB1FB45A5300C58360 /* NendAdResource.bundle in Resources */,
 				AA0223061F7203D20068994F /* DMLocalizable.strings in Resources */,
 				AA0223071F7203D20068994F /* IndependentVideoBundle.bundle in Resources */,
 				AA0223021F7203D20068994F /* ChanceAdRes.bundle in Resources */,
 				AAD7292B1FA2D91C004521EA /* zzAdImage.bundle in Resources */,
-				AAD7292D1FA2D91C004521EA /* PlayableAdsSDK.bundle in Resources */,
 				AA0223011F7203D20068994F /* CLBundle.bundle in Resources */,
 				AAAFBBCD1EA5E05B008A12B3 /* Assets.xcassets in Resources */,
 			);
@@ -853,7 +889,9 @@
 					"$(PROJECT_DIR)/3rdFramework/Vungle-SDK-5.1.1",
 					"$(PROJECT_DIR)/Framework/AvidlyAdsSDK",
 					"$(PROJECT_DIR)/3rdFramework/BatMobi-SDK-2.2.0",
-					"$(PROJECT_DIR)/3rdFramework/PlayableAds-SDK-1.0.6",
+					"$(PROJECT_DIR)/3rdFramework/Maio-SDK-1.2.17",
+					"$(PROJECT_DIR)/3rdFramework/NendAd-SDK-4.0.1",
+					"$(PROJECT_DIR)/3rdFramework/PlayableAds-SDK-1.0.7",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -907,7 +945,9 @@
 					"$(PROJECT_DIR)/3rdFramework/Vungle-SDK-5.1.1",
 					"$(PROJECT_DIR)/Framework/AvidlyAdsSDK",
 					"$(PROJECT_DIR)/3rdFramework/BatMobi-SDK-2.2.0",
-					"$(PROJECT_DIR)/3rdFramework/PlayableAds-SDK-1.0.6",
+					"$(PROJECT_DIR)/3rdFramework/Maio-SDK-1.2.17",
+					"$(PROJECT_DIR)/3rdFramework/NendAd-SDK-4.0.1",
+					"$(PROJECT_DIR)/3rdFramework/PlayableAds-SDK-1.0.7",
 				);
 				INFOPLIST_FILE = AvidlyAdsSDK/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
