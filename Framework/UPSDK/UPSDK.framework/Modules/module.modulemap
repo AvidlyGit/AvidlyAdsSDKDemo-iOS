@@ -1,0 +1,6 @@
+framework module UPSDK {
+  umbrella header "UPSDK.h"
+
+  export *
+  module * { export * }
+}

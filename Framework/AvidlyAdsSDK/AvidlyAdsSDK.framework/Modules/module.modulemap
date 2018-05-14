@@ -1,6 +1,0 @@
-framework module AvidlyAdsSDK {
-  umbrella header "AvidlyAdsSDK.h"
-
-  export *
-  module * { export * }
-}
