@@ -39,6 +39,8 @@
 
 - (void)load:(id<AvidlyRewardLoadDelegate>)delegate;
 
+- (void)debugOnlineLog:(NSString *)key msg:(NSString *)msg;
+
 @end
 
 @protocol AvidlyRewardDelegate <NSObject>

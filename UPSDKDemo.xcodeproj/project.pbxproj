@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA080903218C3C4400F05736 /* IconViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA080901218C3C4400F05736 /* IconViewController.m */; };
 		AA2992931F0A40B800C174ED /* BannerTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA29928C1F0A40B800C174ED /* BannerTestViewController.m */; };
 		AA2992941F0A40B800C174ED /* InterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA29928E1F0A40B800C174ED /* InterstitialViewController.m */; };
 		AA2992951F0A40B800C174ED /* RewardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA2992901F0A40B800C174ED /* RewardViewController.m */; };
@@ -47,6 +48,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA080901218C3C4400F05736 /* IconViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IconViewController.m; sourceTree = "<group>"; };
+		AA080902218C3C4400F05736 /* IconViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IconViewController.h; sourceTree = "<group>"; };
 		AA29928B1F0A40B800C174ED /* BannerTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerTestViewController.h; sourceTree = "<group>"; };
 		AA29928C1F0A40B800C174ED /* BannerTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerTestViewController.m; sourceTree = "<group>"; };
 		AA29928D1F0A40B800C174ED /* InterstitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterstitialViewController.h; sourceTree = "<group>"; };
@@ -145,6 +148,8 @@
 				AA2992981F0A411B00C174ED /* WallViewController.m */,
 				AA2992911F0A40B800C174ED /* ViewController.h */,
 				AA2992921F0A40B800C174ED /* ViewController.m */,
+				AA080902218C3C4400F05736 /* IconViewController.h */,
+				AA080901218C3C4400F05736 /* IconViewController.m */,
 			);
 			path = TestCode;
 			sourceTree = "<group>";
@@ -327,6 +332,7 @@
 				AA2992951F0A40B800C174ED /* RewardViewController.m in Sources */,
 				AA2992941F0A40B800C174ED /* InterstitialViewController.m in Sources */,
 				AAAFBBC21EA5E05B008A12B3 /* main.m in Sources */,
+				AA080903218C3C4400F05736 /* IconViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,11 +468,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = HCJK3Y243A;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Framework/UPSDK_3003",
 					"$(PROJECT_DIR)/Framework/UPSDK",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -482,6 +488,7 @@
 					"-ObjC",
 					"-fobjc-arc",
 				);
+				PRESERVE_DEAD_CODE_INITS_AND_TERMS = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.avidly.adsdk.demo.qa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "23bc79c0-d673-487b-923a-263df6a2a1a9";
@@ -495,11 +502,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = HCJK3Y243A;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Framework/UPSDK_3003",
 					"$(PROJECT_DIR)/Framework/UPSDK",
 				);
 				INFOPLIST_FILE = UPSDKDemo/Info.plist;
@@ -510,6 +517,7 @@
 					"-ObjC",
 					"-fobjc-arc",
 				);
+				PRESERVE_DEAD_CODE_INITS_AND_TERMS = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.avidly.adsdk.demo.qa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "23bc79c0-d673-487b-923a-263df6a2a1a9";

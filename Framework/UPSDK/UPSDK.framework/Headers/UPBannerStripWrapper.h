@@ -24,4 +24,5 @@ typedef NS_ENUM(NSUInteger, UPStripShowLocationType) {
 
 - (instancetype)initWithPlacement:(NSString *)avidPlacement controller:(UIViewController*)vc size:(CGSize)size showLocation:(UPStripShowLocationType)type;
 
+
 @end

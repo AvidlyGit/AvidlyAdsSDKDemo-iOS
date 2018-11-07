@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+//#import <UPSDK/UPSDK.h>
 #import <UPSDK/UPSDK.h>
 
 @interface AppDelegate ()
@@ -74,15 +75,6 @@
     
     return YES;
 }
-    
-[UPSDK requestAuthorizationWithAlert:vc completion:^(BOOL isAccepted) {
-    if (isAccepted) {
-        //同意授权
-    }
-    else {
-        //拒绝授权
-    }
-}];
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {

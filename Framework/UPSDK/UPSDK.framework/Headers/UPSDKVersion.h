@@ -1,4 +1,4 @@
 
 //sdk版本号
-#define AvidlyAdsSDKVERSION  @"3003"
-#define AvidlyAdsSDKBuild    @"2"
+#define AvidlyAdsSDKVERSION  @"3006"
+#define AvidlyAdsSDKBuild    @"1"

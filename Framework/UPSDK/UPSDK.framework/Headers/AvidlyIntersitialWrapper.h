@@ -26,6 +26,8 @@
 
 - (void)load:(id<AvidlyIntersitialLoadDelegate>)loadDelegate;
 
+- (void)onlineReportDebug:(NSString *)eid placeId: placeid msg:(NSString *)msg;
+
 @end
 
 @protocol AvidlyIntersitialDelegate <NSObject>

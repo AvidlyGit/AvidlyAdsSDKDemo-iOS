@@ -17,6 +17,8 @@
 
 - (instancetype)initWithPlacement:(NSString *)avidPlacement controller:(UIViewController*)vc size:(CGSize)size bannerType:(NSInteger)type;
 
+- (void)onlineDebugReportIfNeed:(NSString *)msg placeId:(NSString *)placeid type:(NSInteger)type;
+
 /**
  * 获取banner view
  */

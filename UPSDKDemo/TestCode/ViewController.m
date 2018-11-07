@@ -11,6 +11,7 @@
 #import "InterstitialViewController.h"
 #import "BannerTestViewController.h"
 #import "WallViewController.h"
+#import "IconViewController.h"
 #import <UPSDK/UPSDK.h>
 
 @interface ViewController ()
@@ -50,19 +51,10 @@
     UIButton *button4 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     button4.backgroundColor = [UIColor orangeColor];
     button4.frame = CGRectMake(70, 310, 250, 40);
-    [button4 setTitle:@"H5推荐墙广告测试" forState:UIControlStateNormal];
-    [button4 addTarget:self action:@selector(wallClick) forControlEvents:UIControlEventTouchUpInside];
+    [button4 setTitle:@"Icon广告测试" forState:UIControlStateNormal];
+    [button4 addTarget:self action:@selector(iconClick) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button4];
     [self adjustCenterH:button4];
-    
-    UIButton *button5 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    button5.backgroundColor = [UIColor orangeColor];
-    button5.frame = CGRectMake(70, 380, 250, 40);
-    [button5 setTitle:@"其他测试" forState:UIControlStateNormal];
-    [button5 addTarget:self action:@selector(testClick) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:button5];
-    [self adjustCenterH:button5];
-    
 }
 
 - (void)adjustCenterH:(UIView*)v{
@@ -94,6 +86,12 @@
 - (void)wallClick
 {
     WallViewController *vc = [[WallViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (void)iconClick
+{
+    IconViewController *vc = [[IconViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
