@@ -466,7 +466,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = HCJK3Y243A;
@@ -491,8 +491,8 @@
 				PRESERVE_DEAD_CODE_INITS_AND_TERMS = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.avidly.adsdk.demo.qa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "23bc79c0-d673-487b-923a-263df6a2a1a9";
-				PROVISIONING_PROFILE_SPECIFIER = AdsQATest_AdHoc_Distribution_Profile;
+				PROVISIONING_PROFILE = "cf861f55-3b58-4b88-b134-2e8940898377";
+				PROVISIONING_PROFILE_SPECIFIER = AdsQATest_Development_Profile;
 			};
 			name = Debug;
 		};
@@ -500,7 +500,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = HCJK3Y243A;
@@ -520,8 +520,8 @@
 				PRESERVE_DEAD_CODE_INITS_AND_TERMS = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.avidly.adsdk.demo.qa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "23bc79c0-d673-487b-923a-263df6a2a1a9";
-				PROVISIONING_PROFILE_SPECIFIER = AdsQATest_AdHoc_Distribution_Profile;
+				PROVISIONING_PROFILE = "cf861f55-3b58-4b88-b134-2e8940898377";
+				PROVISIONING_PROFILE_SPECIFIER = AdsQATest_Development_Profile;
 			};
 			name = Release;
 		};
