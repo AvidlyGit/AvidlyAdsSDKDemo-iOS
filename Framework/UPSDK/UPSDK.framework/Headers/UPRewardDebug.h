@@ -2,8 +2,8 @@
 //  UPRewardDebug.h
 //  UPSDK
 //
-//  Created by steve on 2018/4/19.
-//  Copyright © 2018年 liuguojun. All rights reserved.
+//  Created by steve on 2019/4/2.
+//  Copyright © 2019 liuguojun. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

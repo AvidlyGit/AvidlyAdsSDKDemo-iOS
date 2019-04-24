@@ -22,9 +22,7 @@
 
 #import "AvidlyAdsSDK.h"
 #import "AvidlyIntersitialWrapper.h"
-#import "AvidlyInterstitialDebug.h"
 #import "AvidlyRewardWrapper.h"
-#import "AvidlyRewardDebug.h"
 #import "AvidlyAdsWallWrapper.h"
 #import "AvidlyAdsGlobalZone.h"
 #import "AvidlyAdsSDKVersion.h"
